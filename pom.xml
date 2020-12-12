@@ -64,7 +64,8 @@
                                     <element>METHOD</element>
                                     <excludes>
                                         <exclude>*Test</exclude>
-                                        <exclude>*TestNew</exclude>
+                                        <exclude>get*</exclude>
+                                        <exclude>set*</exclude>
                                     </excludes>
                                     <limits>
                                         <limit>
