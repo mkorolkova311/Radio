@@ -5,7 +5,7 @@ public class Radio {
     private int amountStations;
     private int firstStation = 0;
     private int lastStation;
-    private int numberOfCurrentStation;
+    private int numberOfCurrentStation = firstStation;
     private int soundVolume = 10;
     private int minVolume = 0;
     private int maxVolume = 100;
@@ -13,13 +13,11 @@ public class Radio {
     public Radio() {
         this.amountStations = 10;
         this.lastStation = this.amountStations;
-        this.numberOfCurrentStation = this.firstStation;
     }
 
     public Radio(int maxStation) {
         this.amountStations = maxStation;
         this.lastStation = this.amountStations;
-        this.numberOfCurrentStation = this.firstStation;
     }
 
     public int getAmountStations() {
